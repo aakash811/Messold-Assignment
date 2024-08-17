@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/77a953c2a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BootStrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link href="style.css" rel="stylesheet" />
+    <!-- HTML Include JS -->
+    <script src="https://unpkg.com/htmlincludejs"></script>
+
+    <title>
+      Gift, Home Decor, Pooja Samagri, Rakhi, Eco Friendly Ganesha & Diwali
+    </title>
+  </head>
+  <body>
+    <div
+      class="bg-[#e85992] text-center text-white text-[12px] py-[0.3rem] tracking-[1.5px] font-normal"
+    >
+      GET 10% OFF WITH CODE: ILOVEMPB
+    </div>
+    <include src="./navbar.html"></include>
+
+    <div class="relative">
+      <video
+        id="myVideo"
+        width="100%"
+        height="40%"
+        loop
+        autoplay
+        muted
+        preload="true"
+      >
+        <source src="./public/video.mp4" type="video/mp4" />
+      </video>
+      <button
+        id="muteButton"
+        onclick="toggleMute()"
+        class="absolute top-5 right-2 bg-white rounded-full py-[0.5rem] px-[0.7rem]"
+      >
+        <i class="fas fa-volume-up"></i>
+      </button>
+
+      <script>
+        const video = document.getElementById("myVideo");
+        const muteButton = document.getElementById("muteButton");
+
+        function toggleMute() {
+          const icon = muteButton.querySelector("i");
+
+          if (video.muted) {
+            video.muted = false;
+            icon.className = "fas fa-volume-up"; // Change to volume-up icon
+          } else {
+            video.muted = true;
+            icon.className = "fas fa-volume-mute"; // Change to mute icon
+          }
+        }
+      </script>
+    </div>
+    <iframe
+      src="carousel.html"
+      style="width: 100%; height: 300px; background: #fff"
+    ></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        modules: [Swiper.Navigation],
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <include src="./shopping.html"></include>
+    <iframe
+      src="./review.html"
+      style="width: 100%; height: 400px; background: #fff"
+    ></iframe>
+    <div class="mt-10 flex flex-row justify-center">
+      <p class="font-bold tracking-wider text-xl mb-3">
+        My Pooja Box - A One-stop Festive Decor & Gifting Shop
+      </p>
+    </div>
+    <div>
+      <div id="expandable-text" class="text-content mx-32 text-justify text-sm">
+        Being a one-stop pooja samagri online store in India, My Pooja Box
+        bridges the gap between devotees and devotion. We have sorted all your
+        devotional needs by putting forth a wide assortment of products by
+        making it easier for you buy pooja items online. Hindu religion is a
+        potpourri of traditions and ceremonies. Each religious occasion demands
+        for special items as per the rituals. The concept of My Pooja Box
+        revolves around bringing every required product on a single platform. We
+        help you buy pooja items online in India. Decorative pooja thalis,
+        dhoop, hawan samagri,
+        <a
+          href="https://www.mypoojabox.in/collections/god-idols-murti"
+          class="text-[#e85992]"
+          >god’s idols</a
+        >
+        etc., we have a wide line-up of products to choose from. The idols and
+        thalis will give you a glimpse of incredible Indian craftsmanship. Don’t
+        worry if you need a pooja mandir for home to install the figurines of
+        Gods and Goddesses. My Pooja Box has a wide variety of temples in brass
+        and wooden materials and other pooja samagri store as well. Our range
+        also includes
+        <a
+          href="https://www.mypoojabox.in/collections/home-decor"
+          class="text-[#e85992]"
+          >home decor gift items</a
+        >
+        oozing with traditional charm and modern aesthetics. Beautiful tea light
+        scented candles, lanterns, wall hangings, showpieces, and more, choose
+        from a wide list! Those looking for feng shui products also need not go
+        anywhere else. Our assorted collection brings you laughing buddha
+        figurines, tortoise statues, coin trees, owl figurines, and more in just
+        a few clicks. We even possess all your Christmas and Christmas tree
+        decorations, that you require to get with the festive vibes! So, buy
+        havan samagri dhoop, puja store online right from the comfort of your
+        couch to fulfil your religious needs.<br />
+        Worshipping your deity with pure pooja items online offers eternal peace
+        and joy. Hymn the name of your revered god is main path to spirituality.
+        Pooja is an integral a part of Hindu culture and throughout the year, we
+        tend to celebrate the pooja of various Hindu gods and goddesses. It is
+        the only way to connect yourself to your inner soul and at the same time
+        connect yourself to the god and gurus. It entails the use of various
+        numbers of materials. Varied spiritual and religious accessories
+        embellish the mind with clean thoughts. Several foremost vital Pooja
+        items online embody god and god idols, diyas, garland, mukut,
+        sculptures, camphor, puja thali, chandan, haldi, kumkum, bell, and many
+        others.
+        <br />The other religious or puja items like Rudrakshas, Panchpatra,
+        Saligrama, dry fruits, and flower help make feel spiritually. Akshat is
+        unbroken rice grains that are offered to god so as to achieve wealth and
+        prosperity. They are offered to the deities while chanting. Bhasma or
+        vibhuthi protects the user from health problem and evil by purifying him
+        or her. <br />Pooja samagri online shopping of incense sticks facilitate
+        to create ambiance for spiritual forces in and around us. Ever since
+        time immortal, incense has been accustomed kindle moods. The divine
+        fragrance that are pervaded by dhoop incense sticks calm the mind and
+        carry the spirits and enlivens the environment. <br />Indians are very
+        spiritual and traditional. We believe in many gods and goddesses,
+        believing them to bless us with a good life and prosperity. <br /><b
+          >Buy &amp; Send Gifts Online</b
+        >
+        <br />Everyone loves to be cared for, pampered and made feel special on
+        birthdays, anniversaries, or festive occasions.
+        <a
+          href="https://www.mypoojabox.in/collections/gifting"
+          class="text-[#e85992]"
+          >Send gifts online</a
+        >
+        and spread the warmth of love to dear ones living in India or across the
+        world and make the gifting experience unforgettable. Understanding the
+        importance of every moment in your life, MyPoojaBox customizes the best
+        of the traditional gifts for Indian festivals, anniversary gifts for
+        parents, birthday gifts for mothers and so much more. <br /><b
+          >Home Decor</b
+        >
+        <br />Feeling like your home has lost its luster? Redefine your home
+        decor with our beautiful, rustic, and vintage yet contemporary
+        collection of cherry-picked home decor items. Be it lovely
+        <a
+          href="https://www.mypoojabox.in/collections/bandhanwars"
+          class="text-[#e85992]"
+          >Bandhanwars</a
+        >,
+        <a
+          href="https://www.mypoojabox.in/collections/urli"
+          class="text-[#e85992]"
+          >Urli</a
+        >,
+        <a
+          href="https://www.mypoojabox.in/collections/himalayan-salt-lamp"
+          class="text-[#e85992]"
+          >Himalayan salt lamps</a
+        >,
+        <a
+          href="https://www.mypoojabox.in/collections/tableware-serveware"
+          class="text-[#e85992]"
+          >tableware</a
+        >, or even Buddha water fountain, each decorative accessory blends with
+        the beauty of your living space and speaks up a fairy-tale like
+        ambiance. Pair these items with vibrant colored flowers &amp; add up the
+        ethereal charm to the home. <br /><b>Navratri</b> <br />Indian festivals
+        are all about celebration, joy amazement, and fun. Navratri is one of
+        them that comes with beautifully decorated
+        <a
+          href="https://www.mypoojabox.in/collections/durga-idol"
+          class="text-[#e85992]"
+          >Maa Durga Idols</a
+        >, and Navratri decoration items. Adhere to the widest collection of
+        <a
+          href="https://www.mypoojabox.in/collections/navratri"
+          class="text-[#e85992]"
+          >Navratri Puja Samagri</a
+        >
+        &amp; Maa Durga Idols with exquisite detailing that make Navratri a
+        little more memorable. <br /><b>Raksha Bandhan</b>
+
+        <br />Raksha Bandhan is a festival that celebrates the sacred bond
+        between brothers and sisters. Celebrated on Shravana Purnima (Full Moon
+        of the Shravana month) every year, this festival holds a special place
+        in Hindu tradition. To celebrate this festival, sisters tie thread
+        around their brothers’ wrists and vow to protect them for a lifetime. As
+        a sweet gesture, brothers pamper their sisters with gifts and other
+        goodies.
+
+        <br />Raksha Bandhan is going to fall on August 11th (Thursday), this
+        year. At MyPoojaBox, we have something special coming up to make this
+        bond even special both for brothers and sisters. If you stay far away
+        from your brother and you want to send him a rakhi on this special
+        occasion, then you have come to the right place. We offer
+        <a
+          href="https://www.mypoojabox.in/collections/rakhi-online"
+          class="text-[#e85992]"
+          >online Rakhi delivery</a
+        >
+        throughout the country and not just India, but you can also
+        <a
+          href="https://www.mypoojabox.in/collections/send-rakhi-online-to-usa-canada"
+          class="text-[#e85992]"
+          >send rakhi online to the USA</a
+        >, Canada, and the UK through My Pooja Box. Whether it’s a designer
+        rakhi,
+        <a
+          href="https://www.mypoojabox.in/collections/silver-gold-rakhi"
+          class="text-[#e85992]"
+          >a silver rakhi</a
+        >, or a sparkling crystals rakhi, we have got it all covered.
+
+        <br />Dear brothers, you don’t need to worry, we have a huge gifting
+        section for you to choose from. Choose a
+        <a
+          href="https://www.mypoojabox.in/collections/rakhi-gifts-hamper"
+          class="text-[#e85992]"
+          >rakhi gift</a
+        >
+        as per your sister’s liking and we’ll get it delivered for her! <br /><b
+          >JANMASHTAMI</b
+        >
+        <br />The enchanting music of the flute played by Krishna is symbolic of
+        divinity. Janmashtami, the birthday of Lord Krishna is celebrated with
+        great devotion and enthusiasm in India. According to the Hindu calendar
+        this religious festival is celebrated on the Ashtami of Krishna Paksh or
+        the 8th day of the dark fortnight in the month of Bhadon i.e 18th
+        August’2022 this year. <br />The actual celebration of Janmashtami takes
+        place during the midnight as Sri Krishna is believed to be born on a
+        dark, stormy and windy night to end the rule and violence of his uncle,
+        Kansa. All over India this day is celebrated with devotional songs and
+        dances, pujas, arti, blowing of the Conch and rocking the cradle of baby
+        Sri Krishna. <br />Our range of products diversify from Krishna poshaks
+        with elaborate designs of gota patti and beads,
+        <a
+          href="https://www.mypoojabox.in/collections/janmashtami"
+          class="text-[#e85992]"
+          >laddu gopal jhula</a
+        >
+        and much more, laddu gopal singhasan, his bedding on which he sleeps,
+        Krishna special chowki on which he resides and looks out for everyone,
+        his divine flute and much more. <br />
+        <b>GANESH CHATURTHI </b> <br />Ganesh Chaturthi is celebrated as birth
+        anniversary of Lord Ganesh. On
+        <a
+          href="https://www.mypoojabox.in/collections/ganesh-chaturthi"
+          class="text-[#e85992]"
+          >Ganesh Chaturthi</a
+        >, Lord Ganesh is worshipped as the god of wisdom, prosperity and good
+        fortune. It is believed that Lord Ganesh was born during Shukla Paksha
+        of Bhadrapada month. Currently Ganesh Chaturthi day falls in month of
+        Aug i.e. 31st Aug’2022 in English calendar. <br />Lord Ganesha is the
+        most revered and loved of all. Commonly associated with the conventional
+        symbols of Hinduism, his father is the Hindu deity named Shiva. He is
+        the destroyer in the Holy Trinity of Gods while Goddess Parvati, his
+        beloved wife, is one of the many incarnations of Goddess Shakti. Among
+        the many brass pooja items online, it is specifically advised to bring a
+        beautiful and perfectly finished idol or statue of “Eco friendly
+        Ganesha” at home. We have a collection of stunning
+        <a
+          href="https://www.mypoojabox.in/collections/eco-friendly-ganesha"
+          class="text-[#e85992]"
+          >eco-friendly Ganesha idols</a
+        >
+        that have been made using 100% natural and organic materials. Afterall,
+        as citizens of India, it is our responsibility to ensure the wellbeing
+        of the environment. The symbolic figurine of Lord Ganesha consists of an
+        elephant’s head from which comes out a curved trunk. He also has big
+        ears on a big human body. His favorite offering is the famous round
+        Indian sweetmeat known as Laddu and the mouse his closely chosen
+        vehicle. <br />The Ganeshotsav, the festivity of Ganesh Chaturthi, ends
+        after 10 days on Anant Chaturdashi which is also known as Ganesh
+        Visarjan day. On Anant Chaturdashi, devotees immerse idol of Lord Ganesh
+        in water body or flower pots of their house after a gala street
+        procession. <br /><b>KARWA CHAUTH</b> <br />Karwa Chauth, one of many
+        Hindu festivals, is a fasting ritual observed by all married Hindu women
+        who seek the longevity, prosperity and well-being of their husbands.
+        This festival is very popular amongst married Hindu women in the western
+        and northern parts of India, primarily in Punjab, Rajasthan, Haryana,
+        Gujarat, and Uttar Pradesh. During the Karwa Chauth festival, married
+        Hindu women dedicate the day to their husbands. Normally, women who
+        observe this festival are called "Saubhagyavati" meaning "joyous and
+        happy status of wifehood." The festival was emerged also as a day for
+        celebrating autumn. Hindu married women enjoy the company and
+        companionship of relatives and friends. As of recently, the celebration
+        has been given a more religious touch. <br />Karwa chauth is a very
+        important as well as a difficult fast that all married Hindu women
+        observe. The festival begins just before sunrise and ends after
+        worshiping the moon and doing prayers at night. No water or food can be
+        consumed once the sun rises. The fast is only broken after seeing the
+        moon and after all rituals of that day have been performed. When the
+        moon has appeared, women break the fast after they have offered water to
+        the moon with a
+        <a
+          href="https://www.mypoojabox.in/collections/karwa-chauth"
+          class="text-[#e85992]"
+          >fancy karwa chauth thali</a
+        >, channi, lota and bangle designed specially for this occasion to break
+        their fast. <br />Women dress in special clothes during this festival. A
+        pink or red sari with a gold woven pattern is worn by many women as part
+        their custom and is worn only in the evening. New brides will wear their
+        wedding costumes. The karwa chauth fast sets a merry tone of frolic and
+        fun, feasting and festivity and is amongst the biggest festivals
+        celebrated by Hindus. <br />
+        <b>DIWALI</b> <br />Nearly a billion people worldwide participate in the
+        Diwali celebration and almost a dozen countries officially recognize it
+        as an official holiday. Dozens of cities across the United States,
+        Canada, Australia, and the UK also have significant celebrations,
+        dazzling both religious observers and casual passers. Despite the
+        holiday’s increasingly global reach, many unfamiliar with the holiday
+        are still unsure of its origins and significance. <br />Diwali’s
+        cultural travel has allowed it to reach people from various national and
+        linguistic backgrounds. As a result of Indian migration, people in
+        nations as different as Singapore and Trinidad and Tobago celebrate the
+        holiday. They observe its rituals, and share in its rich traditions,
+        this year this celebration is on 24th October 2022. <br />Diwali is
+        considered to be the most auspicious festival especially in India,
+        people worship
+        <a
+          href="https://www.mypoojabox.in/collections/ganesh-idol"
+          class="text-[#e85992]"
+          >Ganesh Laxmi idols</a
+        >
+        and lit up their homes with numerous diyas and candles and kids make
+        Rangoli outside their main door entrance etc. My pooja box has luxurious
+        Diwali box consisting of gold ganesh and laxmi idols pooja essentials
+        like thali, roli chawal platter etc and other brass products to decorate
+        your house.
+        <br />
+        <div class="flex justify-center text-center">
+          <b class="text-[19px] mb-[10px]">
+            <br />
+            <br />
+            "माय पूजा बॉक्स – पूजन सामग्री खरीदने की सबसे बेहतर जगह"
+          </b>
+        </div>
+        <br />
+        ऑनलाइन शॉपिंग की दुनिया में ‘माय पूजा बॉक्स’ एक अकेला ऐसा नाम है.. जहां
+        पूजन सामग्री से जुड़ा हर सामान उपलब्ध है..ये एक ऐसा जरिया है जो भक्तों
+        और उनकी भक्ति के बीच की दूरी को कम करता है..हमने भक्ति से जुड़ी हर चीज
+        को छांट कर उनका विशाल वर्गीकरण किया है..हिन्दू धर्म में तरह-तरह के
+        त्योहार..धार्मिक कार्यक्रम..और अनुष्ठान होते है..जो अलग-अलग तरह से मनाए
+        जाते है.. इनकी अपनी अलग विशेषता होती है.. ‘माय पूजा बॉक्स’ का मकसद है
+        अपने ग्राहकों को उनकी जरुरत से जुड़ी हर वो सामग्री उपलब्ध कराना जो उनकी
+        पूजा में इस्तेमाल होती है.. ताकि उनकी पूजा अधूरी ना रह जाए.. ग्राहक अब
+        भीड़ में.. धूल मिट्टी में धक्के खाते हुए खरीददारी करने की बजाय घर बैठे
+        पूजन सामग्री ऑर्डर कर सकते है.. पूजा की थाली.. भगवान की मूर्ति..धूप..
+        हवन सामग्री.. या फिर आपको अपने घर में चाहिए एक खूबसूरत मंदिर.. तो इसके
+        लिए भी भक्त ‘माय पूजा बॉक्स’ की वेबसाइट पर अपनी पसंद का मंदिर खरीद सकते
+        है..वैसे त्योहारों पर उपहार देने का भी काफी चलन है.. इसे भी ध्यान में
+        रखते हुए होम डेकोर आईट्मस.. वॉल हैंगिंग्स.. सेंटेड कैंडल्स.. फेंगशुई
+        प्रोडक्ट्स.. जैसे तरह-तरह के गिफ्ट देने लायक सामान आप देख सकते है..बस एक
+        क्लिक में आप अपने घर या दोस्तों के लिए अपनी पसंद का कोई भी गिफ्ट खरीद
+        सकते है..चाहे लॉफिंग बुढ्ढा हो..शुभ माने जाने वाली कछूआ की मूर्ति..
+        सिक्कों का पेड़.. और भी बहुत कुछ..गणेश चतुर्थी..राखी.. दिवाली..
+        करवाचौथ.. हर त्योहार पर ‘माय पूजा बॉक्स’ आपके लिए हमेशा तैयार रहता है..
+        वैसे त्योहारों की जब बात आती है..तो हम क्रिसमस को कैसे भूल सकते है..
+        खासकर क्रिसमस ट्री की सजावट के लिए भी हमारे पास है बहुत कुछ.. ‘माय पूजा
+        बॉक्स’ हर पल अपने ग्राहकों के लिए कुछ ना कुछ नया लेकर आता रहता है.. अब
+        राखी के ही लेटेस्ट कलेक्शन को देख लिजिए.. भैया-भाभी से लेकर
+        सोने-चांदी..और बच्चों की राखी का ब्रैंड न्यू कलेक्शन सिर्फ और सिर्फ आप
+        ‘माय पूजा बॉक्स पर ही पाएंगे’.. आपका भाई देश या विदेश के किसी भी कोने
+        में क्यों ना हो..बहने अपने भाईयों के लिए राखी सलेक्ट करके हमारी
+        इंटरनेशनल कूरियर सर्विस के जरिए उन्हें सात समंदर पार डेलिवर करा सकती
+        है.. इन सबके बावजूद ‘माय पूजा बॉक्स’ अपने ग्राहकों के लिए लाया है हीलिंग
+        ब्रेसलेट्स.. ट्रीस.. एंजल्स.. सॉल्ट लैम्प और भी बहुत कुछ..हमने अपने
+        वातावरण को स्वच्छ रखने की जिम्मेदारी को बखूबी निभाया है... जिसका सबूत है
+        ‘इको-फ्रेंडली गणेशा’..ये पूरी तरह से ऑर्गेनिक और 100% नैचरल है.. तो देर
+        किस बात है..भूल जाइए दुकानों के चक्कर काटना..और घर बैठे खुलकर किजिए ‘माय
+        पूजा बॉक्स’ पर शॉपिंग..
+        <br />
+        <br />
+        <b>जन्माष्टमी</b>
+        <br />
+        <br />
+        भगवान श्रीकृष्ण की बांसुरी की जादुई धुन पवित्रता का प्रतीक है.. कान्हा
+        के जन्मदिन यानी जन्माष्टमी को पूरा देश भक्ति भाव और धूम धाम से मनाता
+        है..हिन्दू कैलेंडर के अनुसार जन्माष्टमी कृष्ण पक्ष की अष्टमी को मनाया
+        जाता है..यानी इस साल वो तारीख होगी 18 अगस्त 2022.. जन्माष्टमी का असल
+        जश्न आधी रात को होता है..कहा जाता है कि श्री कृष्ण का जन्म काली
+        अंधेरी..तूफानी रात को हुआ था..ताकि वो अत्याचारी कंस का वध कर सके..पूरे
+        भारत में जन्माष्टमी के दिन मंदिर मे शंख बजाकर श्री कृष्ण की पूजा..
+        आरती.. होती है.. कान्हा को झूला झुलाया जाता है.. साथ ही राधा-कृष्ण के
+        भजन..नृत्य..से भक्तिमय माहौल रहता है.. ‘माय पूजा बॉक्स’ ने इस जनमाष्टमी
+        कान्हा के लिए अलग-अलग तरह की पोशाक का कलेक्शन लाया है.. जिसमें गोटा
+        पट्टी से लेकर मोतियों का वर्क शामिल है.. लड्डू गोपाल का सिंहासन..कान्हा
+        का बिस्तर.. कृष्णा की खास चौकी..जिस पर वो अपनी बांसुरी के साथ विराजमान
+        होते है..
+        <br />
+        <br />
+        <b>गणेश चतुर्थी</b>
+        <br />
+        <br />
+        मंगलमूर्ति गणेश के अवतरण तिथि को गणेश चतुर्थी के त्योहार के रुप में
+        मनाया जाता है... श्री गणेश को बुद्धिमत्ता.. समृद्धि और सौभाग्य के देवता
+        के रुप में पूजा जाता है..ऐसा माना जाता है कि गणपति का जन्म भाद्रपद महीने
+        की शुक्ल पक्ष को हुआ था..अंग्रेजी कैलेण्डर के अनुसार इस साल यानी 2022
+        में इसे 31 अगस्त से मनाया जाएगा.. भगवान गणेश सबसे ज्यादा आदरणीय और प्रिय
+        है..गणेश देवों के देव भगवान शिव और माता पार्वती के पुत्र है..जिन्हें 108
+        नामों से जाना जाता है..सभी देवताओं मे सबसे पहले गणेश की ही पूजा की जाती
+        है...वैसे तो इस गणेश चतुर्थी पर गणेश जी की अलग-अलग तरह की धातु से बनी
+        प्रतिमाओं का कलेक्शन ‘माय पूजा बॉक्स’ ने अपनी वेबसाइट पर लाया है..लेकिन
+        उनकी सब में सबसे ज्यादा मांग है इको-फ्रेंडली गणेशा की..जो पूरी तरह से
+        प्राकृतिक है..जिसे 100% ऑर्गेनिक तत्वों से बनाया गया है..इससे ना तो
+        मनुष्य को कोई नुकसान पहुंचता है..ना ही वातावरण को.. दस दिन तक चलने वाले
+        गणेशोत्सव का समापन अनन्त चतुर्दर्शी पर विर्सजन के साथ होता है..इस दिन
+        विघ्नहर्ता को अगले साल जल्दी आना के जयकारों के साथ विदा कर दिया जाता
+        है..
+        <br />
+        <br />
+        <b>करवाचौथ</b>
+        <br />
+        <br />
+        सुहागिन महिलाओं के लिए करवाचौथ सबसे महत्त्वपूर्ण त्योहार होता है..इस दिन
+        महिलाएं अपने पति की लंबी उम्र और सौभाग्य प्राप्ति के लिए उपवास रखती
+        हैं.. करवाचौथ खासकर देश के उत्तरी और उत्तरी-पश्चिम क्षेत्र जैसे पंजाब..
+        राजस्थान.. हरियाणा.. गुजरात और उत्तर प्रदेश में ज्यादा मनाया जाता
+        है..सुहागिन महिलाओं के लिए ये दिन उनके पति के लिए समर्पित होता है..
+        करवाचौथ सुहाग का पर्व है.. इसलिए इस व्रत को सभी सुहागिन स्त्रियां बड़ी
+        श्रद्धा और आस्था के साथ रखती हैं..महिलाएं दिन भर निर्जल कठिन व्रत रखकर
+        पति की लंबी उम्र की दुआ मांगती है.. करवाचौथ के व्रत की शुरूआत सूर्योदय
+        से पहले होती है.. सास अपनी बहू को सरगी देती है..जिसका सेवन महिलाएं
+        करवाचौथ के दिन सूर्य निकलने से पहले करती है..सरगी..सौभाग्य और समृद्धि का
+        रुप होता है..सरगी के रुप में सास अपनी बहू को विभिन्न खाद्य पदार्थ एवं
+        वस्त्र इत्यादि देकर सौभाग्यवती होने का आशीर्वाद देती है.. सुहागिनें इस
+        शुभ दिन लाल या पीले रंग के कपड़े पहनकर सोलह श्रृंगार करती है..नई
+        दुल्हनें अपनी शादी के जोड़े को दोबारा इस दिन पहनकर पूरे विधि-विधान से
+        पूजा करती है..रात्रि में चंद्रमा निकलने के बाद चांद को अर्घ्य देने के
+        बाद पति से आर्शीवाद पाकर व्रत पूर्ण होता है..
+        <br />
+        <br />
+        <b>दिवाली</b>
+        <br />
+        <br />
+        भारत में सबसे महत्त्वपूर्ण त्योहारों में से एक है दिवाली...ये कार्तिक
+        मास की अमावस्या को मनाया जाता है..इसे प्रकाश और रोशनी के त्योहार के रुप
+        में मनाया जाता है..दरअसल ये एक दिन का नहीं...बल्कि पांच दिनों का त्योहार
+        है..धनतेरस से ही इस त्योहार की शुरूआत हो जाती है..इसे देश-विदेश में लगभग
+        हर धर्म के लोग मनाते है..इस दिन पहनने के लिए नए कपड़े बनवाए जाते है..शाम
+        को भगवान गणेश और माता लक्ष्मी की पूजा की जाती है..खील-बताशो का प्रसाद
+        चढ़ाया जाता है..फूलझड़ी-पटाखे फोड़े जाते है.. अगला दिन होता है भेंट
+        का..एक-दूसरे को गले लगाकर दीपावली की शुभकामनाएं दी जाती है..ऐसे में ‘माय
+        पूजा बॉकस’ अपने ग्राहकों के लिए लाया है बेहद ही आकर्षक दिवाली
+        बॉक्स..जिसमें सोने की श्रीगणेश और माता लक्ष्मी की प्रतिमा के साथ पूजा
+        में इस्तेमाल होने वाली थाली..रोली..चावल और घर में सजाने वाला दूसरा सामान
+        होता है..ये गिफ्ट आप अपने दोस्तों और रिश्तेदारों को देकर उनकी दीवाली को
+        और शुभ बना सकते है..
+        <br />
+      </div>
+
+      <div class="flex justify-center text-center items-center">
+        <button id="toggle-button" class="toggle-button">Read More</button>
+      </div>
+    </div>
+
+    <script>
+      const expandableText = document.getElementById("expandable-text");
+      const toggleButton = document.getElementById("toggle-button");
+
+      toggleButton.addEventListener("click", () => {
+        expandableText.classList.toggle("expanded");
+        if (expandableText.classList.contains("expanded")) {
+          toggleButton.textContent = "Read Less";
+        } else {
+          toggleButton.textContent = "Read More";
+        }
+      });
+    </script>
+    <hr class="mt-5" />
+    <div
+      class="flex flex-row w-full justify-between items-center text-center p-4 text-sm"
+    >
+      <div class="flex flex-col items-center ml-32 gap-y-2">
+        <svg
+          width="52px"
+          height="25px"
+          viewBox="0 0 52 25"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>speedy-delivery</title>
+          <g
+            id="symbols"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Group-2-Copy-2"
+              transform="translate(-7.000000, 0.000000)"
+              stroke="#2E2E2E"
+              stroke-width="0.5"
+            >
+              <g id="speedy-delivery" transform="translate(7.000000, 0.000000)">
+                <path
+                  d="M18.295,0.5 L39.25,0.5 C39.573,0.5 39.835,0.762 39.835,1.085 L39.835,13.56"
+                  id="Stroke-1"
+                ></path>
+                <line
+                  x1="51.0996"
+                  y1="13.56"
+                  x2="27.1456"
+                  y2="13.56"
+                  id="Stroke-3"
+                  stroke-linecap="round"
+                ></line>
+                <path
+                  d="M40.0513,3.5948 L45.5723,3.5948 C46.6433,3.5948 51.6103,11.1828 51.6103,14.5178 L51.6103,20.9098 L48.3143,20.9098"
+                  id="Stroke-5"
+                ></path>
+                <path
+                  d="M29.258,20.8482 C29.258,22.8652 27.623,24.5002 25.606,24.5002 C23.589,24.5002 21.954,22.8652 21.954,20.8482 C21.954,18.8312 23.589,17.1962 25.606,17.1962 C27.623,17.1962 29.258,18.8312 29.258,20.8482 Z"
+                  id="Stroke-7"
+                ></path>
+                <path
+                  d="M26.7751,20.7791 C26.7751,21.4251 26.2521,21.9481 25.6061,21.9481 C24.9611,21.9481 24.4371,21.4251 24.4371,20.7791 C24.4371,20.1331 24.9611,19.6101 25.6061,19.6101 C26.2521,19.6101 26.7751,20.1331 26.7751,20.7791 Z"
+                  id="Stroke-9"
+                ></path>
+                <path
+                  d="M48.2,20.8482 C48.2,22.8652 46.565,24.5002 44.548,24.5002 C42.531,24.5002 40.896,22.8652 40.896,20.8482 C40.896,18.8312 42.531,17.1962 44.548,17.1962 C46.565,17.1962 48.2,18.8312 48.2,20.8482 Z"
+                  id="Stroke-11"
+                ></path>
+                <path
+                  d="M45.7171,20.7791 C45.7171,21.4251 45.1941,21.9481 44.5481,21.9481 C43.9031,21.9481 43.3791,21.4251 43.3791,20.7791 C43.3791,20.1331 43.9031,19.6101 44.5481,19.6101 C45.1941,19.6101 45.7171,20.1331 45.7171,20.7791 Z"
+                  id="Stroke-13"
+                ></path>
+                <line
+                  x1="29.6992"
+                  y1="20.9797"
+                  x2="40.8962"
+                  y2="20.9797"
+                  id="Stroke-15"
+                ></line>
+                <line
+                  x1="18.883"
+                  y1="20.9797"
+                  x2="21.761"
+                  y2="20.9797"
+                  id="Stroke-17"
+                  stroke-linecap="round"
+                ></line>
+                <line
+                  x1="17.5832"
+                  y1="3.5948"
+                  x2="2.1712"
+                  y2="3.5948"
+                  id="Stroke-19"
+                  stroke-linecap="round"
+                ></line>
+                <line
+                  x1="15.912"
+                  y1="10.1302"
+                  x2="0.5"
+                  y2="10.1302"
+                  id="Stroke-21"
+                  stroke-linecap="round"
+                ></line>
+                <line
+                  x1="18.883"
+                  y1="17.1963"
+                  x2="3.471"
+                  y2="17.1963"
+                  id="Stroke-23"
+                  stroke-linecap="round"
+                ></line>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p>Speedy delivery</p>
+      </div>
+
+      <div
+        class="flex flex-col items-center border-l border-r border-gray-700 px-52 gap-y-2"
+      >
+        <svg
+          width="41px"
+          height="25px"
+          viewBox="0 0 41 25"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>cash-on-delivery</title>
+          <g
+            id="symbols"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Group-2-Copy-2"
+              transform="translate(-138.000000, 0.000000)"
+              stroke="#2E2E2E"
+              stroke-width="0.5"
+            >
+              <g
+                id="cash-on-delivery"
+                transform="translate(138.000000, 0.000000)"
+              >
+                <path
+                  d="M14.8,7.6 C14.8,11.576 7.737,21.471 7.6,21.471 C7.6,21.471 0.4,11.576 0.4,7.6 C0.4,3.624 3.624,0.4 7.6,0.4 C11.576,0.4 14.8,3.624 14.8,7.6 Z"
+                  id="Stroke-1"
+                ></path>
+                <path
+                  d="M10.2717,7.2679 C10.2717,8.7939 9.0347,10.0299 7.5097,10.0299 C5.9837,10.0299 4.7467,8.7939 4.7467,7.2679 C4.7467,5.7419 5.9837,4.5059 7.5097,4.5059 C9.0347,4.5059 10.2717,5.7419 10.2717,7.2679 Z"
+                  id="Stroke-3"
+                ></path>
+                <path
+                  d="M12.1736,22.634 C12.1736,23.609 10.1466,24.4 7.6456,24.4 C5.1446,24.4 3.1166,23.609 3.1166,22.634 C3.1166,21.659 5.1446,20.868 7.6456,20.868 C10.1466,20.868 12.1736,21.659 12.1736,22.634 Z"
+                  id="Stroke-5"
+                ></path>
+                <polyline
+                  id="Stroke-7"
+                  points="12.7128 2.5311 40.6478 2.5311 40.6478 19.8261 8.6858 19.8261"
+                ></polyline>
+                <line
+                  x1="10.1311"
+                  y1="17.8309"
+                  x2="15.3431"
+                  y2="17.8309"
+                  id="Stroke-9"
+                ></line>
+                <line
+                  x1="12.2353"
+                  y1="14.3261"
+                  x2="15.3433"
+                  y2="14.3261"
+                  id="Stroke-11"
+                ></line>
+                <line
+                  x1="13.8105"
+                  y1="11.1787"
+                  x2="15.3435"
+                  y2="11.1787"
+                  id="Stroke-13"
+                ></line>
+                <path
+                  d="M28.7563,11.0868 C28.7563,13.3948 26.8853,15.2658 24.5773,15.2658 C22.2703,15.2658 20.3993,13.3948 20.3993,11.0868 C20.3993,8.7788 22.2703,6.9078 24.5773,6.9078 C26.8853,6.9078 28.7563,8.7788 28.7563,11.0868 Z"
+                  id="Stroke-15"
+                ></path>
+                <polyline
+                  id="Stroke-17"
+                  points="34.5329 4.5057 37.9289 4.5057 37.9289 8.2337"
+                ></polyline>
+                <polyline
+                  id="Stroke-19"
+                  points="34.5329 17.7509 37.9289 17.7509 37.9289 14.0229"
+                ></polyline>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p>Cash on delivery</p>
+      </div>
+
+      <div class="flex flex-col items-center mr-32 px-6 gap-y-2">
+        <svg
+          width="29px"
+          height="27px"
+          viewBox="0 0 29 27"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <title>easy-returns</title>
+          <defs>
+            <polygon
+              id="path-1"
+              points="0 25.5185185 28.04 25.5185185 28.04 0 0 0"
+            ></polygon>
+          </defs>
+          <g
+            id="symbols"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g id="Group-2-Copy-2" transform="translate(-270.000000, 1.000000)">
+              <g id="easy-returns" transform="translate(270.000000, 0.000000)">
+                <path
+                  d="M26.25,12.7592593 C26.25,19.6733333 20.43,25.2777778 13.25,25.2777778 C6.07,25.2777778 0.25,19.6733333 0.25,12.7592593 C0.25,5.84518519 6.07,0.240740741 13.25,0.240740741 C17.729,0.240740741 21.678,2.42185185 24.016,5.74118519"
+                  id="Stroke-1"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                ></path>
+                <polyline
+                  id="Stroke-3"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                  points="27.852 14.2012963 26.25 12.4381111 24.714 13.9595926"
+                ></polyline>
+                <polygon
+                  id="Stroke-5"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                  points="8.6204 5.98288889 17.9164 5.98288889 20.2874 8.12259259 20.2874 18.928963 6.3244 18.928963 6.3244 8.05133333"
+                ></polygon>
+                <line
+                  x1="6.3241"
+                  y1="8.05142963"
+                  x2="20.2871"
+                  y2="8.12268889"
+                  id="Stroke-7"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                ></line>
+                <line
+                  x1="7.7685"
+                  y1="15.5786222"
+                  x2="11.9905"
+                  y2="15.5786222"
+                  id="Stroke-9"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                ></line>
+                <line
+                  x1="7.7685"
+                  y1="17.1341926"
+                  x2="9.9125"
+                  y2="17.1341926"
+                  id="Stroke-11"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                ></line>
+                <path
+                  d="M14.0278,5.98288889 L14.8918,8.12259259 L14.8918,10.4327407 C14.8918,10.529037 14.8108,10.607037 14.7098,10.607037 L11.7648,10.607037 C11.6648,10.607037 11.5838,10.529037 11.5838,10.4327407 L11.5838,8.05133333 L12.5218,5.98288889"
+                  id="Stroke-13"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                ></path>
+                <mask id="mask-2" fill="white">
+                  <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-16"></g>
+                <polygon
+                  id="Stroke-15"
+                  stroke="#2D2D2D"
+                  stroke-width="0.5"
+                  mask="url(#mask-2)"
+                  points="16.552 17.134 18.012 17.134 18.012 15.5788148 16.552 15.5788148"
+                ></polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p>Easy returns</p>
+      </div>
+    </div>
+    <include src="./Footer.html"></include>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!-- carousel.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      html,
+      body {
+        position: relative;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 85%;
+        height: 50%;
+        margin-top: 30px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 160px;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+      .swiper-wrapper {
+        background: transparent;
+        color: transparent;
+      }
+      .swiper-button-next {
+        top: 80px;
+        right: 80px;
+      }
+      .swiper-button-prev {
+        top: 80px;
+        left: 80px;
+      }
+      .text-class {
+        margin-top: 10px;
+        font-size: x-small;
+        font-weight: 100;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/DSC_0975_1b7f6388-e4ab-49e4-9f9a-72dd84b036ac_300x.jpg?v=1718779745"
+            />
+            <div class="text-class">RAKHI</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/Evil_Eye_300x.png?v=1687507176"
+            />
+            <div class="text-class">EVIL EYE</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/pooja-thali-sets_300x.png?v=1707472825"
+            />
+            <div class="text-class">POOJA THALI</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/DSC_5574_a4ca7ca8-4d85-4749-aef0-59fed43b9600_300x.jpg?v=1718779950"
+            />
+            <div class="text-class">ROSE QUARTZ</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/urlis_300x.png?v=1672914906"
+            />
+            <div class="text-class">URLIS</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/Pyrite_300x.png?v=1713260950"
+            />
+            <div class="text-class">PYRITE</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/citrine_300x.png?v=1713256314"
+            />
+            <div class="text-class">CITRINE</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/Pooja_Essentials_51dc7021-06e3-4e9a-9acf-746446694d4b_300x.png?v=1687507176"
+            />
+            <div class="text-class">CHANTING BOX</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/amethyst_300x.png?v=1713260255"
+            />
+            <div class="text-class">AMETHYST</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/Aura_cleansing_300x.png?v=1687507177"
+            />
+            <div class="text-class">AURA CLEANSING</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/New_Project_7_300x.png?v=1719230218"
+            />
+            <div class="text-class">CLEAR QUARTZ</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="">
+            <img
+              src="https://www.mypoojabox.in/cdn/shop/files/moonstone_300x.png?v=1714465690"
+            />
+            <div class="text-class">MOONSTONE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 8,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
